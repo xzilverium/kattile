@@ -1,0 +1,11 @@
+<?php
+
+/**
+ * Kattile Air
+ *
+ * This is the command-line entry point for Kattile.
+ * It receives terminal commands and passes them to the
+ * Kvendor command system.
+ */
+
+require __DIR__ . '/kvendor/commands/index.php';

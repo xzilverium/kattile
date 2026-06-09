@@ -1,0 +1,72 @@
+/* ============================================================
+   SILVER AMBIENT 1010
+   Foundations: Typography
+   ============================================================ */
+
+body {
+  font-family: var(--sa-font-sans);
+  font-size: var(--sa-text-base);
+  font-weight: var(--sa-weight-regular);
+  line-height: var(--sa-line-normal);
+  color: var(--sa-text-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--sa-weight-medium);
+  line-height: var(--sa-line-tight);
+  color: var(--sa-text-primary);
+  letter-spacing: -0.02em;
+}
+
+p {
+  color: var(--sa-text-secondary);
+  line-height: var(--sa-line-relaxed);
+}
+
+code,
+pre,
+kbd {
+  font-family: var(--sa-font-mono);
+}
+
+.sa-heading-xl {
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: var(--sa-weight-light);
+}
+
+.sa-heading-lg {
+  font-size: clamp(24px, 3.5vw, 40px);
+  font-weight: var(--sa-weight-light);
+}
+
+.sa-heading-md {
+  font-size: var(--sa-text-3xl);
+}
+
+.sa-heading-sm {
+  font-size: var(--sa-text-xl);
+}
+
+.sa-muted {
+  color: var(--sa-text-muted);
+}
+
+.sa-secondary {
+  color: var(--sa-text-secondary);
+}
+
+.sa-accent-text {
+  color: var(--sa-accent-bright);
+}
+
+.sa-gradient-text {
+  background: linear-gradient(135deg, var(--sa-text-primary), #a0a0a0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

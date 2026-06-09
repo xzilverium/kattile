@@ -1,0 +1,148 @@
+/* ============================================================
+   SILVER AMBIENT 1010
+   Components: Buttons
+   ============================================================ */
+
+.sa-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--sa-space-2);
+
+    min-height: 40px;
+
+    padding: 0 var(--sa-space-5);
+
+    border-radius: var(--sa-radius-pill);
+
+    font-size: var(--sa-text-sm);
+    font-weight: var(--sa-weight-medium);
+
+    color: var(--sa-text-primary);
+    background: transparent;
+
+    border: 1px solid transparent;
+
+    transition:
+        background var(--sa-dur-base) var(--sa-ease-out),
+        color var(--sa-dur-base) var(--sa-ease-out),
+        border-color var(--sa-dur-base) var(--sa-ease-out),
+        box-shadow var(--sa-dur-base) var(--sa-ease-out),
+        transform var(--sa-dur-fast) var(--sa-ease-out);
+}
+
+.sa-btn:hover {
+    transform: translateY(-1px);
+}
+
+.sa-btn:active {
+    transform: translateY(0) scale(0.98);
+}
+
+.sa-btn-primary {
+    background: var(--sa-text-primary);
+    color: var(--sa-text-inverted);
+}
+
+.sa-btn-primary:hover {
+    background: #ffffff;
+    box-shadow: var(--sa-shadow-glow);
+}
+
+.sa-btn-accent {
+    background: var(--sa-accent-gradient);
+    color: #ffffff;
+    box-shadow: 0 0 0 1px rgba(255,255,255,.06);
+}
+
+.sa-btn-accent:hover {
+    box-shadow: var(--sa-shadow-glow);
+}
+
+.sa-btn-ghost {
+    background: transparent;
+    color: var(--sa-text-secondary);
+    border-color: var(--sa-border-subtle);
+}
+
+.sa-btn-ghost:hover {
+    background: rgba(99, 102, 241, 0.08);
+    color: var(--sa-text-primary);
+    border-color: var(--sa-glass-border-mid);
+}
+
+.sa-btn-mica {
+    background: var(--sa-mica-bg);
+    backdrop-filter: var(--sa-mica-blur);
+    -webkit-backdrop-filter: var(--sa-mica-blur);
+
+    border-color: var(--sa-mica-border);
+    border-top-color: var(--sa-mica-border-top);
+
+    box-shadow: var(--sa-mica-shadow), var(--sa-mica-inner-top);
+}
+
+.sa-btn-mica:hover {
+    background: var(--sa-mica-bg-raised);
+}
+
+.sa-btn-danger {
+    background: var(--sa-accent-danger);
+    color: #ffffff;
+}
+
+.sa-btn-danger:hover {
+    background: #ef4444;
+}
+
+.sa-btn-success {
+    background: var(--sa-accent-success);
+    color: #06130d;
+}
+
+.sa-btn-sm {
+    min-height: 32px;
+    padding: 0 var(--sa-space-4);
+    font-size: var(--sa-text-xs);
+}
+
+.sa-btn-lg {
+    min-height: 48px;
+    padding: 0 var(--sa-space-7);
+    font-size: var(--sa-text-md);
+}
+
+.sa-btn-icon {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+
+    border-radius: var(--sa-radius-full);
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sa-btn-icon-sm {
+    width: 32px;
+    height: 32px;
+}
+
+.sa-btn-icon-lg {
+    width: 48px;
+    height: 48px;
+}
+
+.sa-btn svg,
+.sa-btn-icon svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.sa-btn:disabled,
+.sa-btn.is-disabled {
+    opacity: 0.45;
+    pointer-events: none;
+}

@@ -1,0 +1,53 @@
+/* ============================================================
+   SILVER AMBIENT 1010
+   System: Responsive
+   ============================================================ */
+
+@media (max-width: 1200px) {
+    :root {
+        --sa-panel-max: 1080px;
+    }
+}
+
+@media (max-width: 992px) {
+    :root {
+        --sa-sidebar-width: 260px;
+    }
+
+    .sa-hide-lg {
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --sa-header-height: 60px;
+        --sa-sidebar-width: 280px;
+    }
+
+    .sa-hide-md {
+        display: none !important;
+    }
+
+    .sa-show-md {
+        display: block !important;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --sa-text-hero: 26px;
+    }
+
+    .sa-hide-sm {
+        display: none !important;
+    }
+
+    .sa-page-heading {
+        font-size: 28px;
+    }
+
+    .sa-chat-title {
+        font-size: 26px;
+    }
+}

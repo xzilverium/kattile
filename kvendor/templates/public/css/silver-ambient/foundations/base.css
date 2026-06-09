@@ -1,0 +1,51 @@
+/* ============================================================
+   SILVER AMBIENT 1010
+   Foundations: Base
+   ============================================================ */
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  background:
+    radial-gradient(ellipse at 40% 100%, #110d28 0%, #07070f 55%, #000000 100%);
+  background-color: var(--sa-bg-void);
+  color: var(--sa-text-primary);
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--sa-accent);
+  transition: color var(--sa-dur-fast) var(--sa-ease-out);
+}
+
+a:hover {
+  color: var(--sa-accent-bright);
+}
+
+::selection {
+  background: var(--sa-accent-dim);
+  color: var(--sa-text-primary);
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(99, 102, 241, 0.18);
+  border-radius: var(--sa-radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(79, 142, 247, 0.3);
+}

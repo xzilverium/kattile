@@ -1,0 +1,183 @@
+/* ============================================================
+   SILVER AMBIENT 1010
+   Layout: Sidebar
+   ============================================================ */
+
+.sa-sidebar {
+    width: var(--sa-sidebar-width);
+    height: 100vh;
+
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: var(--sa-space-5);
+
+    background: linear-gradient(
+        to right,
+        rgba(10, 8, 22, 0.55) 0%,
+        rgba(10, 8, 22, 0.30) 85%,
+        transparent 100%
+    );
+    backdrop-filter: var(--sa-glass-blur);
+    -webkit-backdrop-filter: var(--sa-glass-blur);
+
+    overflow-y: auto;
+}
+
+.sa-sidebar-brand {
+    margin-bottom: var(--sa-space-7);
+}
+
+.sa-sidebar-section {
+    margin-bottom: var(--sa-space-6);
+}
+
+.sa-sidebar-title {
+    font-size: var(--sa-text-xs);
+    font-weight: var(--sa-weight-semibold);
+    color: var(--sa-text-muted);
+
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+
+    margin-bottom: var(--sa-space-3);
+}
+
+.sa-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.sa-nav-item {
+    display: flex;
+    align-items: center;
+    gap: var(--sa-space-3);
+
+    min-height: 40px;
+
+    padding: 0 var(--sa-space-4);
+
+    border-radius: var(--sa-radius-md);
+
+    color: var(--sa-text-secondary);
+    font-size: var(--sa-text-sm);
+
+    transition:
+        background var(--sa-dur-base) var(--sa-ease-out),
+        color var(--sa-dur-base) var(--sa-ease-out);
+}
+
+.sa-nav-item:hover {
+    background: rgba(99, 102, 241, 0.08);
+    color: var(--sa-text-primary);
+}
+
+.sa-nav-item.is-active,
+.sa-nav-item.active {
+    background: rgba(99, 102, 241, 0.14);
+    color: var(--sa-text-primary);
+}
+
+.sa-nav-icon {
+    width: 18px;
+    height: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: inherit;
+    flex-shrink: 0;
+}
+
+.sa-nav-text {
+    flex: 1;
+    min-width: 0;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.sa-nav-badge {
+    min-width: 20px;
+    height: 20px;
+
+    padding: 0 6px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: var(--sa-radius-full);
+
+    background: var(--sa-accent-dim);
+    color: var(--sa-accent-bright);
+
+    font-size: var(--sa-text-xs);
+    font-weight: var(--sa-weight-medium);
+}
+
+.sa-sidebar-footer {
+    margin-top: auto;
+    padding-top: var(--sa-space-5);
+
+    border-top: 1px solid var(--sa-border-faint);
+}
+
+.sa-sidebar-card {
+    padding: var(--sa-space-4);
+
+    border-radius: var(--sa-radius-lg);
+
+    background: var(--sa-glass-bg-light);
+    border: 1px solid var(--sa-glass-border);
+}
+
+.sa-sidebar-card-title {
+    font-size: var(--sa-text-sm);
+    color: var(--sa-text-primary);
+    margin-bottom: var(--sa-space-1);
+}
+
+.sa-sidebar-card-text {
+    font-size: var(--sa-text-xs);
+    color: var(--sa-text-muted);
+    line-height: var(--sa-line-relaxed);
+}
+
+.sa-sidebar.is-collapsed {
+    width: 76px;
+}
+
+.sa-sidebar.is-collapsed .sa-sidebar-title,
+.sa-sidebar.is-collapsed .sa-nav-text,
+.sa-sidebar.is-collapsed .sa-nav-badge,
+.sa-sidebar.is-collapsed .sa-sidebar-card,
+.sa-sidebar.is-collapsed .sa-brand-text {
+    display: none;
+}
+
+.sa-sidebar.is-collapsed .sa-nav-item {
+    justify-content: center;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .sa-sidebar {
+        position: fixed;
+        inset: 0 auto 0 0;
+
+        z-index: 1200;
+
+        transform: translateX(-100%);
+        transition: transform var(--sa-dur-slow) var(--sa-ease-out);
+    }
+
+    .sa-sidebar.is-open {
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,46 @@
+/* ============================================================
+   SILVER AMBIENT 1010
+   System: Accessibility
+   ============================================================ */
+
+.sa-sr-only {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+
+    padding: 0;
+    margin: -1px;
+
+    overflow: hidden;
+
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+
+    border: 0;
+}
+
+:focus-visible {
+    outline: 2px solid var(--sa-accent);
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+@media (prefers-contrast: more) {
+    :root {
+        --sa-border-subtle: rgba(255,255,255,0.18);
+        --sa-border-mid: rgba(255,255,255,0.28);
+        --sa-glass-border: rgba(255,255,255,0.18);
+        --sa-text-muted: #b8b8d0;
+    }
+}

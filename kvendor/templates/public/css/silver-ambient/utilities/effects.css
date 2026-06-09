@@ -1,0 +1,59 @@
+/* ============================================================
+   SILVER AMBIENT 1010
+   Utilities: Effects
+   ============================================================ */
+
+.sa-rounded-sm { border-radius: var(--sa-radius-sm); }
+.sa-rounded-md { border-radius: var(--sa-radius-md); }
+.sa-rounded-lg { border-radius: var(--sa-radius-lg); }
+.sa-rounded-xl { border-radius: var(--sa-radius-xl); }
+.sa-rounded-2xl { border-radius: var(--sa-radius-2xl); }
+.sa-rounded-full { border-radius: var(--sa-radius-full); }
+
+.sa-shadow-sm { box-shadow: var(--sa-shadow-sm); }
+.sa-shadow-md { box-shadow: var(--sa-shadow-md); }
+.sa-shadow-lg { box-shadow: var(--sa-shadow-lg); }
+.sa-shadow-xl { box-shadow: var(--sa-shadow-xl); }
+.sa-shadow-glow { box-shadow: var(--sa-shadow-glow); }
+
+.sa-glass {
+    background: var(--sa-glass-bg-light);
+    border: 1px solid var(--sa-glass-border);
+    backdrop-filter: var(--sa-glass-blur);
+    -webkit-backdrop-filter: var(--sa-glass-blur);
+}
+
+.sa-mica {
+    background: var(--sa-mica-bg);
+    border: 1px solid var(--sa-mica-border);
+    border-top-color: var(--sa-mica-border-top);
+    backdrop-filter: var(--sa-mica-blur);
+    -webkit-backdrop-filter: var(--sa-mica-blur);
+    box-shadow: var(--sa-mica-shadow), var(--sa-mica-inner-top);
+}
+
+.sa-border {
+    border: 1px solid var(--sa-border-subtle);
+}
+
+.sa-border-faint {
+    border: 1px solid var(--sa-border-faint);
+}
+
+.sa-divider {
+    border: 0;
+    border-top: 1px solid var(--sa-border-faint);
+}
+
+.sa-blur {
+    backdrop-filter: var(--sa-glass-blur);
+    -webkit-backdrop-filter: var(--sa-glass-blur);
+}
+
+.sa-no-select {
+    user-select: none;
+}
+
+.sa-hidden {
+    display: none;
+}

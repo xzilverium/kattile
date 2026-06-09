@@ -1,0 +1,136 @@
+/* ============================================================
+   SILVER AMBIENT 1010
+   Foundations: Design Tokens
+   ============================================================ */
+
+:root {
+  /* Backgrounds */
+  --sa-bg-void: #000000;
+  --sa-bg-deep: #07070f;
+  --sa-bg-glow: #0d0820;
+  --sa-bg-glow-alt: #080615;
+  --sa-bg-surface: #0f0f18;
+  --sa-bg-surface-hover: #15151f;
+  --sa-bg-surface-raised: #1c1c28;
+  --sa-bg-overlay: #12121c;
+
+  /* Mica Material */
+  --sa-mica-bg: rgba(10, 8, 22, 0.82);
+  --sa-mica-bg-raised: rgba(20, 16, 38, 0.88);
+  --sa-mica-bg-hover: rgba(255, 255, 255, 0.04);
+  --sa-mica-blur: blur(4px) saturate(110%);
+  --sa-mica-border: rgba(255, 255, 255, 0.07);
+  --sa-mica-border-top: rgba(255, 255, 255, 0.11);
+  --sa-mica-shadow: 0 4px 24px rgba(0,0,0,0.6),
+                    0 1px 4px rgba(0,0,0,0.4);
+  --sa-mica-inner-top: inset 0 1px 0 rgba(255,255,255,0.08);
+
+  /* Glass */
+  --sa-glass-bg: rgba(14, 11, 26, 0.6);
+  --sa-glass-bg-light: rgba(255, 255, 255, 0.03);
+  --sa-glass-bg-raised: rgba(255, 255, 255, 0.055);
+  --sa-glass-blur: blur(8px);
+  --sa-glass-blur-heavy: blur(12px);
+  --sa-glass-border: rgba(120, 100, 220, 0.1);
+  --sa-glass-border-mid: rgba(120, 100, 220, 0.18);
+
+  /* Text */
+  --sa-text-primary: #eaeaf2;
+  --sa-text-secondary: #b2b2c8;
+  --sa-text-muted: #8888a8;
+  --sa-text-ghost: #484860;
+  --sa-text-inverted: #000000;
+
+  /* Accent */
+  --sa-accent: #6366f1;
+  --sa-accent-shift: #4f8ef7;
+  --sa-accent-gradient: linear-gradient(115deg, #6366f1 0%, #4f8ef7 100%);
+  --sa-accent-dim: rgba(99, 102, 241, 0.14);
+  --sa-accent-dim-blue: rgba(79, 142, 247, 0.12);
+  --sa-accent-bright: #818cf8;
+  --sa-accent-bright-blue: #7aafff;
+  --sa-accent-warm: #f0a04b;
+  --sa-accent-success: #34d399;
+  --sa-accent-danger: #f87171;
+  --sa-accent-code: #a5b4fc;
+
+  /* Borders */
+  --sa-border-faint: rgba(255,255,255,0.04);
+  --sa-border-subtle: rgba(255,255,255,0.07);
+  --sa-border-mid: rgba(255,255,255,0.13);
+  --sa-border-strong: rgba(255,255,255,0.22);
+  --sa-border-divider: rgba(255,255,255,0.05);
+
+  /* Shadows */
+  --sa-shadow-sm: 0 2px 8px rgba(0,0,0,0.4);
+  --sa-shadow-md: 0 4px 16px rgba(0,0,0,0.5);
+  --sa-shadow-lg: 0 8px 32px rgba(0,0,0,0.6);
+  --sa-shadow-xl: 0 16px 48px rgba(0,0,0,0.75);
+  --sa-shadow-glow: 0 0 20px rgba(99,102,241,0.2),
+                    0 0 40px rgba(79,142,247,0.1);
+  --sa-shadow-glass: 0 4px 20px rgba(0,0,0,0.4),
+                     inset 0 1px 0 rgba(255,255,255,0.05);
+
+  /* Fonts */
+  --sa-font-sans: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+  --sa-font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+
+  /* Font sizes */
+  --sa-text-xs: 11px;
+  --sa-text-sm: 12px;
+  --sa-text-base: 14px;
+  --sa-text-md: 15px;
+  --sa-text-lg: 16px;
+  --sa-text-xl: 18px;
+  --sa-text-2xl: 20px;
+  --sa-text-3xl: 24px;
+  --sa-text-hero: clamp(28px, 4vw, 44px);
+
+  /* Font weights */
+  --sa-weight-light: 300;
+  --sa-weight-regular: 400;
+  --sa-weight-medium: 500;
+  --sa-weight-semibold: 600;
+  --sa-weight-bold: 700;
+
+  /* Line heights */
+  --sa-line-tight: 1.2;
+  --sa-line-normal: 1.5;
+  --sa-line-relaxed: 1.7;
+
+  /* Spacing */
+  --sa-space-1: 4px;
+  --sa-space-2: 8px;
+  --sa-space-3: 10px;
+  --sa-space-4: 12px;
+  --sa-space-5: 16px;
+  --sa-space-6: 20px;
+  --sa-space-7: 24px;
+  --sa-space-8: 32px;
+  --sa-space-9: 40px;
+  --sa-space-10: 48px;
+
+  /* Radius */
+  --sa-radius-sm: 6px;
+  --sa-radius-md: 8px;
+  --sa-radius-lg: 12px;
+  --sa-radius-xl: 16px;
+  --sa-radius-2xl: 20px;
+  --sa-radius-pill: 30px;
+  --sa-radius-full: 9999px;
+
+  /* Motion */
+  --sa-ease-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --sa-ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --sa-dur-fast: 150ms;
+  --sa-dur-base: 200ms;
+  --sa-dur-slow: 400ms;
+  --sa-dur-page: 500ms;
+
+  /* Layout */
+  --sa-sidebar-width: 280px;
+  --sa-header-height: 64px;
+  --sa-input-max-width: 800px;
+  --sa-content-max: 960px;
+  --sa-panel-max: 1200px;
+}

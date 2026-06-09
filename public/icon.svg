@@ -1,0 +1,56 @@
+<svg width="512" height="512" viewBox="163 138 380 380" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Kattile Sign</title>
+  <defs>
+    <radialGradient id="g1" cx="72%" cy="18%" r="50%">
+      <stop offset="0%" stop-color="#7B00FF" stop-opacity="1"/>
+      <stop offset="55%" stop-color="#9F40FF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="15%" cy="85%" r="45%">
+      <stop offset="0%" stop-color="#6600FF" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#8833FF" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="1"/>
+    </radialGradient>
+    <mask id="shape">
+      <path fill-rule="evenodd"
+        d="
+          M 340 148
+          L 498 240
+          L 498 352
+          L 420 352
+          L 420 286
+          L 340 240
+          L 260 286
+          L 260 394
+          L 340 440
+          L 390 411
+          L 390 480
+          L 340 508
+          L 182 416
+          L 182 240
+          Z
+          M 340 290
+          L 294 316
+          L 294 370
+          L 340 396
+          L 386 370
+          L 386 316
+          Z
+        "
+        fill="white"
+      />
+      <path d="M 504 148 L 524 168 L 504 188 L 484 168 Z" fill="white"/>
+    </mask>
+  </defs>
+
+  <g mask="url(#shape)">
+    <rect x="0" y="0" width="680" height="680" fill="#ffffff"/>
+    <rect x="0" y="0" width="680" height="680" fill="url(#g1)"/>
+    <rect x="0" y="0" width="680" height="680" fill="url(#g2)"/>
+    <rect x="0" y="0" width="680" height="680" fill="url(#g3)"/>
+  </g>
+</svg>

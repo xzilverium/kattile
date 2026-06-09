@@ -1,0 +1,36 @@
+/* ============================================================
+   SILVER AMBIENT 1010
+   Utilities: Spacing
+   ============================================================ */
+
+.sa-m-0 { margin: 0; }
+.sa-mt-1 { margin-top: var(--sa-space-1); }
+.sa-mt-2 { margin-top: var(--sa-space-2); }
+.sa-mt-3 { margin-top: var(--sa-space-3); }
+.sa-mt-4 { margin-top: var(--sa-space-4); }
+.sa-mt-5 { margin-top: var(--sa-space-5); }
+.sa-mt-6 { margin-top: var(--sa-space-6); }
+.sa-mt-8 { margin-top: var(--sa-space-8); }
+
+.sa-mb-1 { margin-bottom: var(--sa-space-1); }
+.sa-mb-2 { margin-bottom: var(--sa-space-2); }
+.sa-mb-3 { margin-bottom: var(--sa-space-3); }
+.sa-mb-4 { margin-bottom: var(--sa-space-4); }
+.sa-mb-5 { margin-bottom: var(--sa-space-5); }
+.sa-mb-6 { margin-bottom: var(--sa-space-6); }
+.sa-mb-8 { margin-bottom: var(--sa-space-8); }
+
+.sa-p-0 { padding: 0; }
+.sa-p-3 { padding: var(--sa-space-3); }
+.sa-p-4 { padding: var(--sa-space-4); }
+.sa-p-5 { padding: var(--sa-space-5); }
+.sa-p-6 { padding: var(--sa-space-6); }
+.sa-p-8 { padding: var(--sa-space-8); }
+
+.sa-gap-1 { gap: var(--sa-space-1); }
+.sa-gap-2 { gap: var(--sa-space-2); }
+.sa-gap-3 { gap: var(--sa-space-3); }
+.sa-gap-4 { gap: var(--sa-space-4); }
+.sa-gap-5 { gap: var(--sa-space-5); }
+.sa-gap-6 { gap: var(--sa-space-6); }
+.sa-gap-8 { gap: var(--sa-space-8); }

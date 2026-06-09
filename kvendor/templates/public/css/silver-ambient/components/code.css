@@ -1,0 +1,93 @@
+/* ============================================================
+   SILVER AMBIENT 1010
+   Components: Code Blocks
+   ============================================================ */
+
+.sa-code-block {
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: var(--sa-radius-md);
+
+    background: var(--sa-glass-bg-light);
+
+    border: 1px solid var(--sa-glass-border);
+
+    backdrop-filter: var(--sa-glass-blur);
+    -webkit-backdrop-filter: var(--sa-glass-blur);
+}
+
+.sa-code-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: var(--sa-space-2) var(--sa-space-5);
+
+    background: rgba(99, 102, 241, 0.05);
+
+    border-bottom: 1px solid var(--sa-glass-border);
+}
+
+.sa-code-lang {
+    font-family: var(--sa-font-mono);
+    font-size: var(--sa-text-xs);
+    color: var(--sa-text-muted);
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.sa-code-body {
+    padding: var(--sa-space-5);
+
+    overflow-x: auto;
+
+    font-family: var(--sa-font-mono);
+    font-size: var(--sa-text-sm);
+    line-height: var(--sa-line-relaxed);
+
+    color: var(--sa-text-primary);
+
+    tab-size: 2;
+}
+
+pre.sa-pre {
+    padding: var(--sa-space-5);
+
+    overflow-x: auto;
+
+    border-radius: var(--sa-radius-md);
+
+    background: var(--sa-glass-bg-light);
+    border: 1px solid var(--sa-glass-border);
+
+    font-family: var(--sa-font-mono);
+    font-size: var(--sa-text-sm);
+    line-height: var(--sa-line-relaxed);
+
+    color: var(--sa-text-primary);
+}
+
+code {
+    padding: 1px 5px;
+
+    border-radius: var(--sa-radius-sm);
+
+    background: rgba(99, 102, 241, 0.08);
+    color: var(--sa-accent-code);
+
+    font-family: var(--sa-font-mono);
+    font-size: 0.9em;
+}
+
+pre code,
+.sa-code-body code {
+    padding: 0;
+
+    background: transparent;
+    color: inherit;
+
+    font-size: inherit;
+}

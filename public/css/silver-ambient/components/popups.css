@@ -1,0 +1,114 @@
+/* ============================================================
+   SILVER AMBIENT 1010
+   Components: Popups & Dropdowns
+   ============================================================ */
+
+.sa-popup {
+    position: absolute;
+    z-index: 1500;
+
+    min-width: 220px;
+
+    padding: var(--sa-space-2) 0;
+
+    display: none;
+    flex-direction: column;
+
+    background: var(--sa-mica-bg);
+    backdrop-filter: var(--sa-mica-blur);
+    -webkit-backdrop-filter: var(--sa-mica-blur);
+
+    border: 1px solid var(--sa-mica-border);
+    border-top-color: var(--sa-mica-border-top);
+
+    border-radius: var(--sa-radius-lg);
+
+    box-shadow: var(--sa-mica-shadow), var(--sa-mica-inner-top);
+
+    opacity: 0;
+    transform: translateY(6px) scale(0.98);
+
+    transition:
+        opacity var(--sa-dur-fast) var(--sa-ease-out),
+        transform var(--sa-dur-fast) var(--sa-ease-out);
+}
+
+.sa-popup.is-open {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.sa-popup-item {
+    display: flex;
+    align-items: center;
+    gap: var(--sa-space-3);
+
+    padding: var(--sa-space-3) var(--sa-space-5);
+
+    color: var(--sa-text-secondary);
+    font-size: var(--sa-text-sm);
+
+    cursor: pointer;
+    user-select: none;
+
+    transition:
+        background var(--sa-dur-fast) var(--sa-ease-out),
+        color var(--sa-dur-fast) var(--sa-ease-out);
+}
+
+.sa-popup-item:hover {
+    background: rgba(99, 102, 241, 0.08);
+    color: var(--sa-text-primary);
+}
+
+.sa-popup-item-danger {
+    color: var(--sa-accent-danger);
+}
+
+.sa-popup-item-danger:hover {
+    background: rgba(248, 113, 113, 0.10);
+    color: var(--sa-accent-danger);
+}
+
+.sa-popup-icon {
+    width: 18px;
+    height: 18px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.sa-popup-meta {
+    margin-left: auto;
+
+    font-size: var(--sa-text-xs);
+    color: var(--sa-text-muted);
+}
+
+.sa-popup-divider {
+    height: 1px;
+
+    margin: var(--sa-space-1) 0;
+
+    background: var(--sa-border-faint);
+}
+
+.sa-popup-head {
+    padding: var(--sa-space-3) var(--sa-space-5);
+
+    font-size: var(--sa-text-xs);
+    font-weight: var(--sa-weight-semibold);
+    color: var(--sa-text-muted);
+
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.sa-dropdown {
+    position: relative;
+    display: inline-flex;
+}

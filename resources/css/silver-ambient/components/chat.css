@@ -1,0 +1,225 @@
+/* ============================================================
+   SILVER AMBIENT 1010
+   Components: Chat
+   ============================================================ */
+
+.sa-chat-shell {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    min-height: calc(100vh - var(--sa-header-height));
+
+    overflow: hidden;
+}
+
+.sa-chat-history {
+    width: 100%;
+    max-width: var(--sa-input-max-width);
+
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--sa-space-7);
+
+    padding: var(--sa-space-6);
+    padding-bottom: 130px;
+
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+.sa-msg-row {
+    display: flex;
+    width: 100%;
+
+    animation: sa-fade-up var(--sa-dur-slow) var(--sa-ease-out) both;
+}
+
+.sa-msg-row-user {
+    justify-content: flex-end;
+}
+
+.sa-msg-row-ai {
+    justify-content: flex-start;
+}
+
+.sa-msg-bubble {
+    max-width: 80%;
+
+    padding: var(--sa-space-4) var(--sa-space-5);
+
+    border-radius: 18px;
+
+    font-size: var(--sa-text-md);
+    line-height: var(--sa-line-relaxed);
+}
+
+.sa-msg-row-user .sa-msg-bubble {
+    background: var(--sa-glass-bg);
+
+    border: 1px solid var(--sa-glass-border);
+    border-bottom-right-radius: 4px;
+
+    color: var(--sa-text-primary);
+
+    backdrop-filter: var(--sa-glass-blur);
+    -webkit-backdrop-filter: var(--sa-glass-blur);
+
+    box-shadow: var(--sa-shadow-sm);
+}
+
+.sa-msg-row-ai .sa-msg-bubble {
+    background: transparent;
+    color: var(--sa-text-primary);
+
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.sa-chat-input-bar {
+    position: absolute;
+    left: 50%;
+    bottom: var(--sa-space-6);
+
+    transform: translateX(-50%);
+
+    width: 100%;
+    max-width: var(--sa-input-max-width);
+
+    padding: 0 var(--sa-space-6);
+
+    z-index: 50;
+}
+
+.sa-chat-input-wrap {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: var(--sa-space-2);
+
+    padding: var(--sa-space-2) var(--sa-space-4);
+
+    border-radius: var(--sa-radius-pill);
+
+    background: var(--sa-mica-bg);
+
+    border: 1px solid var(--sa-mica-border);
+    border-top-color: var(--sa-mica-border-top);
+
+    backdrop-filter: var(--sa-mica-blur);
+    -webkit-backdrop-filter: var(--sa-mica-blur);
+
+    box-shadow: var(--sa-mica-shadow), var(--sa-mica-inner-top);
+
+    transition:
+        border-color var(--sa-dur-base) var(--sa-ease-out),
+        box-shadow var(--sa-dur-base) var(--sa-ease-out);
+}
+
+.sa-chat-input-wrap:focus-within {
+    border-color: rgba(99, 102, 241, 0.32);
+    box-shadow:
+        var(--sa-mica-shadow),
+        var(--sa-mica-inner-top),
+        0 0 0 1px var(--sa-accent-dim),
+        0 0 32px rgba(99, 102, 241, 0.12);
+}
+
+.sa-chat-input {
+    flex: 1;
+
+    min-height: 44px;
+
+    background: transparent;
+    border: 0;
+    outline: 0;
+
+    color: var(--sa-text-primary);
+
+    font-size: var(--sa-text-lg);
+}
+
+.sa-chat-input::placeholder {
+    color: var(--sa-text-muted);
+}
+
+.sa-chat-hero {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--sa-space-4);
+
+    text-align: center;
+
+    padding: 0 var(--sa-space-6);
+}
+
+.sa-chat-title {
+    max-width: 780px;
+
+    font-size: var(--sa-text-hero);
+    font-weight: var(--sa-weight-light);
+
+    line-height: var(--sa-line-tight);
+    letter-spacing: -0.03em;
+}
+
+.sa-chat-subtitle {
+    max-width: 540px;
+
+    font-size: var(--sa-text-lg);
+    color: var(--sa-text-muted);
+
+    line-height: var(--sa-line-relaxed);
+}
+
+.sa-loading-dots {
+    display: flex;
+    align-items: center;
+    gap: var(--sa-space-1);
+
+    padding: var(--sa-space-4) 0;
+}
+
+.sa-dot {
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: var(--sa-accent-gradient);
+
+    animation: sa-pulse 1.4s infinite ease-in-out both;
+}
+
+.sa-dot:nth-child(1) {
+    animation-delay: -0.32s;
+}
+
+.sa-dot:nth-child(2) {
+    animation-delay: -0.16s;
+}
+
+@media (max-width: 768px) {
+    .sa-msg-bubble {
+        max-width: 92%;
+    }
+
+    .sa-chat-input-bar {
+        padding: 0 var(--sa-space-4);
+    }
+}

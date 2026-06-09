@@ -1,0 +1,48 @@
+/**
+ * Kvendor Template
+ *
+ * @target public/css/app.css
+ */
+
+/* ============================================================
+   KATTILE UI
+   Silver Ambient 1010 Styling System
+   Main Entry Point
+   ============================================================ */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+/* Foundations */
+@import url('./silver-ambient/foundations/tokens.css');
+@import url('./silver-ambient/foundations/reset.css');
+@import url('./silver-ambient/foundations/typography.css');
+@import url('./silver-ambient/foundations/base.css');
+
+/* Layout */
+@import url('./silver-ambient/layout/app-shell.css');
+@import url('./silver-ambient/layout/header.css');
+@import url('./silver-ambient/layout/sidebar.css');
+@import url('./silver-ambient/layout/page.css');
+
+/* Components */
+@import url('./silver-ambient/components/buttons.css');
+@import url('./silver-ambient/components/forms.css');
+@import url('./silver-ambient/components/cards.css');
+@import url('./silver-ambient/components/badges.css');
+@import url('./silver-ambient/components/popups.css');
+@import url('./silver-ambient/components/tabs.css');
+@import url('./silver-ambient/components/alerts.css');
+@import url('./silver-ambient/components/chat.css');
+@import url('./silver-ambient/components/code.css');
+
+/* Utilities */
+@import url('./silver-ambient/utilities/spacing.css');
+@import url('./silver-ambient/utilities/flex.css');
+@import url('./silver-ambient/utilities/text.css');
+@import url('./silver-ambient/utilities/effects.css');
+
+/* System */
+@import url('./silver-ambient/system/animations.css');
+@import url('./silver-ambient/system/responsive.css');
+@import url('./silver-ambient/system/accessibility.css');

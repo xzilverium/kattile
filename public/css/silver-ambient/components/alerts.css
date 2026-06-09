@@ -1,0 +1,65 @@
+/* ============================================================
+   SILVER AMBIENT 1010
+   Components: Alerts
+   ============================================================ */
+
+.sa-alert {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--sa-space-4);
+
+    padding: var(--sa-space-4) var(--sa-space-5);
+
+    border-radius: var(--sa-radius-md);
+
+    font-size: var(--sa-text-sm);
+    line-height: var(--sa-line-relaxed);
+
+    backdrop-filter: var(--sa-glass-blur);
+    -webkit-backdrop-filter: var(--sa-glass-blur);
+}
+
+.sa-alert-info {
+    background: rgba(99, 102, 241, 0.08);
+    border: 1px solid rgba(79, 142, 247, 0.22);
+    color: var(--sa-accent-bright);
+}
+
+.sa-alert-success {
+    background: rgba(52, 211, 153, 0.10);
+    border: 1px solid rgba(52, 211, 153, 0.22);
+    color: var(--sa-accent-success);
+}
+
+.sa-alert-warning {
+    background: rgba(240, 160, 75, 0.10);
+    border: 1px solid rgba(240, 160, 75, 0.24);
+    color: var(--sa-accent-warm);
+}
+
+.sa-alert-danger {
+    background: rgba(248, 113, 113, 0.10);
+    border: 1px solid rgba(248, 113, 113, 0.24);
+    color: var(--sa-accent-danger);
+}
+
+.sa-alert-icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.sa-alert-content {
+    flex: 1;
+}
+
+.sa-alert-title {
+    font-weight: var(--sa-weight-semibold);
+    margin-bottom: var(--sa-space-1);
+}
+
+.sa-alert-text {
+    color: inherit;
+    opacity: 0.9;
+}

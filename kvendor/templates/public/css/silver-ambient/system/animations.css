@@ -1,0 +1,74 @@
+/* ============================================================
+   SILVER AMBIENT 1010
+   System: Animations
+   ============================================================ */
+
+@keyframes sa-fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes sa-fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes sa-slide-down {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes sa-pulse {
+    0%,
+    80%,
+    100% {
+        transform: scale(0);
+        opacity: 0.5;
+    }
+
+    40% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes sa-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.sa-animate-fade-in {
+    animation: sa-fade-in var(--sa-dur-slow) var(--sa-ease-out) both;
+}
+
+.sa-animate-fade-up {
+    animation: sa-fade-up var(--sa-dur-slow) var(--sa-ease-out) both;
+}
+
+.sa-animate-slide-down {
+    animation: sa-slide-down var(--sa-dur-base) var(--sa-ease-out) both;
+}
+
+.sa-animate-spin {
+    animation: sa-spin 1s linear infinite;
+}

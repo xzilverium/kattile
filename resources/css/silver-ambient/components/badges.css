@@ -1,0 +1,96 @@
+/* ============================================================
+   SILVER AMBIENT 1010
+   Components: Badges & Tags
+   ============================================================ */
+
+.sa-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--sa-space-1);
+
+    min-height: 22px;
+
+    padding: 2px var(--sa-space-2);
+
+    border-radius: var(--sa-radius-sm);
+
+    font-size: var(--sa-text-xs);
+    font-weight: var(--sa-weight-medium);
+    line-height: 1;
+
+    white-space: nowrap;
+}
+
+.sa-badge-default {
+    background: var(--sa-bg-surface-raised);
+    color: var(--sa-text-secondary);
+}
+
+.sa-badge-accent {
+    background: var(--sa-accent-dim);
+    color: var(--sa-accent-bright);
+}
+
+.sa-badge-success {
+    background: rgba(52, 211, 153, 0.15);
+    color: var(--sa-accent-success);
+}
+
+.sa-badge-warning {
+    background: rgba(240, 160, 75, 0.15);
+    color: var(--sa-accent-warm);
+}
+
+.sa-badge-danger {
+    background: rgba(248, 113, 113, 0.15);
+    color: var(--sa-accent-danger);
+}
+
+.sa-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sa-space-2);
+
+    min-height: 28px;
+
+    padding: 0 var(--sa-space-3);
+
+    border-radius: var(--sa-radius-full);
+
+    background: var(--sa-glass-bg-light);
+    border: 1px solid var(--sa-glass-border);
+
+    color: var(--sa-text-secondary);
+    font-size: var(--sa-text-sm);
+
+    backdrop-filter: var(--sa-glass-blur);
+    -webkit-backdrop-filter: var(--sa-glass-blur);
+
+    transition:
+        background var(--sa-dur-base) var(--sa-ease-out),
+        border-color var(--sa-dur-base) var(--sa-ease-out),
+        color var(--sa-dur-base) var(--sa-ease-out);
+}
+
+.sa-tag:hover {
+    background: var(--sa-glass-bg-raised);
+    border-color: var(--sa-glass-border-mid);
+    color: var(--sa-text-primary);
+}
+
+.sa-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: var(--sa-space-1) var(--sa-space-3);
+
+    border-radius: var(--sa-radius-full);
+
+    background: rgba(99, 102, 241, 0.10);
+    color: var(--sa-accent-bright);
+
+    font-size: var(--sa-text-xs);
+    font-weight: var(--sa-weight-medium);
+}

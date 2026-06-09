@@ -1,0 +1,45 @@
+/* ============================================================
+   SILVER AMBIENT 1010
+   Utilities: Text
+   ============================================================ */
+
+.sa-text-xs { font-size: var(--sa-text-xs); }
+.sa-text-sm { font-size: var(--sa-text-sm); }
+.sa-text-base { font-size: var(--sa-text-base); }
+.sa-text-md { font-size: var(--sa-text-md); }
+.sa-text-lg { font-size: var(--sa-text-lg); }
+.sa-text-xl { font-size: var(--sa-text-xl); }
+.sa-text-2xl { font-size: var(--sa-text-2xl); }
+.sa-text-3xl { font-size: var(--sa-text-3xl); }
+
+.sa-font-light { font-weight: var(--sa-weight-light); }
+.sa-font-regular { font-weight: var(--sa-weight-regular); }
+.sa-font-medium { font-weight: var(--sa-weight-medium); }
+.sa-font-semibold { font-weight: var(--sa-weight-semibold); }
+.sa-font-bold { font-weight: var(--sa-weight-bold); }
+
+.sa-text-primary { color: var(--sa-text-primary); }
+.sa-text-secondary { color: var(--sa-text-secondary); }
+.sa-text-muted { color: var(--sa-text-muted); }
+.sa-text-accent { color: var(--sa-accent-bright); }
+.sa-text-danger { color: var(--sa-accent-danger); }
+.sa-text-success { color: var(--sa-accent-success); }
+.sa-text-warning { color: var(--sa-accent-warm); }
+
+.sa-text-left { text-align: left; }
+.sa-text-center { text-align: center; }
+.sa-text-right { text-align: right; }
+
+.sa-uppercase {
+    text-transform: uppercase;
+}
+
+.sa-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.sa-mono {
+    font-family: var(--sa-font-mono);
+}
